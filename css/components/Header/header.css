@@ -1,0 +1,57 @@
+.background-container {
+    background-image: url("../../../img/fundo-home1.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+     /* Substitua 'caminho/para/sua/imagem.jpg' pelo caminho correto da sua imagem */
+}
+
+
+/* HEADER DA HOME */
+.header-home{
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    height: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* IMAGEM DENTRO DO HEADER DA HOME */
+.logo{
+    object-fit: contain;
+    width: 200px;
+    height: 70px;
+}
+
+.desktop-links, .desktop-ul, .desktop-li, .desktop-a{
+    list-style: none;
+    padding-left: 8px;/* ESPAÇAMENTO DE UM ELEMENTO LI A OUTRO */
+    display: flex;
+    align-self: center;
+    
+}
+
+/* COR DA LETRA DA PÁGINA HOME */
+.header-home .desktop-links .desktop-ul .desktop-li .desktop-a {
+    color: var(--fundo-branco);/* chamando a cor da variavel global, para facilitar na hora de procurar a # da cor */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+/* QUANDO O USUARIO PASSAR O MOUSE EM CIMA DAS OPÇÕES DO HEADER, FICARA CINZA CLARO*/
+.header-home .desktop-links .desktop-ul .desktop-li .desktop-a:hover{
+    color: var(--titulo-claro);
+    cursor: pointer;
+    transition: transform 1.3s ease; /* Adicionando uma transição suave de 0.3 segundos */
+
+    transform: scale(1.15);
+}
+/* QUANDO O USUARIO PASSAR E CLICAR EM ALGUMA DAS OPÇÕES DO HEADER, FICARA LILAS */
+.header-home .desktop-links .desktop-ul .desktop-li .desktop-a:active {
+    color: var(--lilas);
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Adicionando uma transição suave de 0.3 segundos */
+    transform: scale(1.20);
+}
