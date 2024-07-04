@@ -252,3 +252,27 @@
     padding-top: 30px;
     padding-right: 36px;
 }
+
+@media only screen and (max-width: 992px){
+    .titulo-home{
+        font-size: 50px;
+        line-height: 58px;
+    }
+
+    .sub-home{
+        color: #c4c4c4;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+       font-size: 20px;
+       line-height: 30px;
+        padding-top: 30px;
+    }
+
+    .sobrenos {
+        width: 30% !important;
+    }
+
+    .background-container {
+        height: 145vh !important;
+    }
+}

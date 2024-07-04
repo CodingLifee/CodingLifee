@@ -29,6 +29,47 @@
             </nav>
         </div>
 
+        <div class="header-mobile" id="header-mobile" >
+            <div class="hamburguer">
+                <img class="icon-hamburguer" src="img/menu-hamburguer.png" alt="Logo da Viagemilhas" height="48px" onclick="showMenu()">
+                <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo da Coding Life" height="36px"></a>
+            </div>
+
+
+            <nav class="mobile-links">
+                 <!-- Button to close the overlay navigation -->
+                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <ul class="mobile-ul">
+                    <li class="mobile-li"><a class="mobile-a" href="#home">HOME</a></li>
+                    <li class="mobile-li"><a class="mobile-a" href="#sobrenos">SOBRE NÓS</a></li>
+                    <li class="mobile-li"><a class="mobile-a" href="#servicos">SERVIÇOS</a></li>
+                    <li class="mobile-li"><a class="mobile-a" href="#equipe">EQUIPE</a></li>
+                    <li class="mobile-li"><a class="mobile-a" href="#contatos">CONTATOS</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+
+   
+  
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+  
+  </div>
+  
+  <!-- Use any element to open/show the overlay navigation menu -->
+  <span onclick="openNav()">open</span>
+
+
+
         <header class="Container-home">
             <h1 class="titulo-home">Promovemos <br> a integração entre tecnologia <br> e experiência humana</h1>
 
