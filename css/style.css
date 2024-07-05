@@ -104,32 +104,25 @@
 .his-sobrenos{
     color: #808080;
     font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-   line-height: 36px;
-    padding-right: 46px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 36px;
 }
+
 .extra-text {
     display: none; /* Esconde o texto extra inicialmente */
 }
 
-.imgSobreNos{
-    width: 48%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 3px;
-}
 .btn-VerMais{
     border: 1px solid var(--sub-roxo);/* grossura da borda, tipo da borda, cor */
     border-radius: 5px;
     background: linear-gradient(to right, #A780F5 08%, #641AF8 70%);
-    width: 10%;
     height: 56px;
+    width: 23%;
     color: var(--fundo-branco);
     font-family: "Poppins", sans-serif;
     font-size: 18px;
     font-weight: 700;
-    margin-top: 36px;
     transition: transform 0.3s ease; /* Adiciona uma transição suave */
 }
 
@@ -138,13 +131,8 @@
     color: var(--fundo-branco);
     cursor: pointer;
     transform: scale(1.1); /* Aumenta o tamanho do botão */
-    
 }
 
-.flex{
-   width:55%;
-   padding-left: 16%;
-}
 
 .container-servicos{
     display: flex;
@@ -208,7 +196,7 @@
 .cargos{
     color: #808080;
     font-family: "Poppins", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 18px;
    line-height: 20px;
    padding: 10px 16px 0;
@@ -216,8 +204,8 @@
 }
 
 .imgEquipe{
-    width: 240px !important;
-    height: 240px !important;
+    width: 200px !important;
+    height: 200px !important;
     object-fit: cover;
     border-radius: 50%;
     margin: 0 auto;
@@ -247,8 +235,15 @@
     color: var(--sub-roxo);
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-size: 36px;
-   /*line-height: 36px; */
-    padding-top: 30px;
-    padding-right: 36px;
+    font-size: 28px;
+    padding: 20px 0;
+}
+
+.pd{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.pd-fer{
+    padding: 18px 10px 0;
 }
