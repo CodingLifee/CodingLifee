@@ -16,7 +16,61 @@
 </head>
 <body>
     <!-- Header -->
-    <div class="container-fluid p-0" id="home">
+    <header class="header-fullscreen">
+        <div class="overlay">
+
+            <div class="header-home">
+                <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo da Coding Life"></a>
+    
+                <nav class="desktop-links">
+                <ul class="desktop-ul">
+                    <li class="desktop-li"><a class="desktop-a" href="#home">HOME</a></li>
+                    <li class="desktop-li"><a class="desktop-a" href="#sobrenos">SOBRE NÓS</a></li>
+                    <li class="desktop-li"><a class="desktop-a" href="#servicos">SERVIÇOS</a></li>
+                    <li class="desktop-li"><a class="desktop-a" href="#equipe">EQUIPE</a></li>
+                    <li class="desktop-li"><a class="desktop-a" href="#contatos">CONTATOS</a></li>
+                </ul>
+                </nav>
+            </div>
+
+            <header class="Container-home pt-5 pb-5">
+                <h1 class="titulo-home">Promovemos <br> a integração entre tecnologia <br> e experiência humana</h1>
+    
+                <p class="sub-home">​Procuramos criar uma ligação profunda entre o software e o usuário,<br> 
+                    semelhante à harmonia que o ser humano encontra na natureza. <br>
+                    Nossa missão é proporcionar uma experiência fluida e intuitiva.
+                </p>
+                <button class="sobrenos" id="scrollSobreNos">Sobre nós</button>
+    
+                <div class="container-servicos">
+                    <div class="info-home">
+                        <p class="informacoes">250 
+                            <span class="informacoes-mais">+</span><br> <p class="sub-info">Cliente <br> Satisfeito </p>
+                        </p>
+                    </div>
+                    <div class="info-home">
+                        <p class="informacoes">400 
+                            <span class="informacoes-mais">+</span> <br> <p class="sub-info">Projetos <br> incriveis</p>
+                        </p>
+                    </div>
+                    <div class="info-home">
+                        <p class="informacoes">15 
+                            <span class="informacoes-mais">+</span> <br> <p class="sub-info">Premiações</p>
+                        </p>
+                    </div>
+                </div>
+            </header> 
+
+
+
+            <!-- <div class="header-content">
+                <h1>Bem-vindo ao Nosso Site</h1>
+                <p>Explore nossos serviços e conheça nossa equipe</p>
+                <a href="#sobre" class="btn">Saiba Mais</a>
+            </div> -->
+        </div>
+    </header>
+    <!-- <div class="container-fluid p-0" id="home">
         <img src="../../../img/fundo-site.png" class="img-fundo" alt="...">
 
         <div class="header-home position-absolute z-5">
@@ -32,10 +86,10 @@
             </ul>
             </nav>
         </div>
-    </div>
-    
-    <!-- Conteudo -->
-    <div class="container-fluid my-5 ">
+    </div> -->
+
+     <!-- Conteudo -->
+     <div class="container-fluid my-5 ">
         <!-- sessão sobre nós -->
         <section class="container mt-5" id="sobrenos">
             <div class="row">
@@ -44,7 +98,7 @@
                     <h1 class="titulo-SobreNos mt-5">Sobre nós</h1>
                 </div>
 
-                <div class="col-6">
+                <div class="col-6 col-xs-12">
                     <p class="his-sobrenos">Na Coding Life, estamos dedicados a fornecer soluções de primeira linha que atendam às necessidades específicas de cada cliente. 
                         Buscamos ser uma empresa de software inovadora, destacando-nos pela nossa capacidade de criar uma conexão profunda entre o software e os usuários. Desde nossa fundação, nosso objetivo é proporcionar uma experiência intuitiva e harmoniosa, semelhante à relação do ser humano com a natureza. <span id="ellipsis">...</span>
                         <span class="extra-text">A história da empresa é um testemunho de como a tecnologia pode ser desenvolvida com propósito, 
@@ -54,7 +108,7 @@
                     <button id="verMaisBtn" class="btn-VerMais mt-2">Ver mais</button>
                 </div>
 
-                <div class="col-6">
+                <div class="col-6 col-xs-12">
                     <img class="img-fluid" src="img/office.jpg" alt="Office">
                 </div>
             </div>   
@@ -157,6 +211,8 @@
         </section>
     </div>
 
+    
+   
     <button id="backToTopBtn" title="Ir para o topo">↑</button>
 
     <!-- Footer -->
