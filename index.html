@@ -18,51 +18,66 @@
     <!-- Header -->
     <header class="header-fullscreen">
         <div class="overlay" id="home">
-
             <div class="header-home">
                 <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo da Coding Life"></a>
-    
+                
                 <nav class="desktop-links">
-                <ul class="desktop-ul">
-                    <li class="desktop-li"><a class="desktop-a" href="#home">HOME</a></li>
-                    <li class="desktop-li"><a class="desktop-a" href="#sobrenos">SOBRE NÓS</a></li>
-                    <li class="desktop-li"><a class="desktop-a" href="#servicos">SERVIÇOS</a></li>
-                    <li class="desktop-li"><a class="desktop-a" href="#equipe">EQUIPE</a></li>
-                    <li class="desktop-li"><a class="desktop-a" href="#contatos">CONTATOS</a></li>
-                </ul>
+                    <ul class="desktop-ul">
+                        <li class="desktop-li"><a class="desktop-a" href="#home">HOME</a></li>
+                        <li class="desktop-li"><a class="desktop-a" href="#sobrenos">SOBRE NÓS</a></li>
+                        <li class="desktop-li"><a class="desktop-a" href="#servicos">SERVIÇOS</a></li>
+                        <li class="desktop-li"><a class="desktop-a" href="#equipe">EQUIPE</a></li>
+                        <li class="desktop-li"><a class="desktop-a" href="#contatos">CONTATOS</a></li>
+                    </ul>
                 </nav>
+                
+
+                <div class="menu-icon pt-3" id="menuIcon">
+                    &#9776;
+                </div>
             </div>
 
+            <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+                <a href="javascript:void(0)" class="closebtn" id="closeBtn">&times;</a>
+                <ul class="mobile-menu">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#sobrenos">SOBRE NÓS</a></li>
+                    <li><a href="#servicos">SERVIÇOS</a></li>
+                    <li><a href="#equipe">EQUIPE</a></li>
+                    <li><a href="#contatos">CONTATOS</a></li>
+                </ul>
+            </div>
+        </div>
+
+
             <header class="Container-home pt-5 pb-5">
-                <h1 class="titulo-home">Promovemos <br> a integração entre tecnologia <br> e experiência humana</h1>
+                <h1 class="titulo-home pt-5">Promovemos <br> a integração entre tecnologia <br> e experiência humana</h1>
     
                 <p class="sub-home">​Procuramos criar uma ligação profunda entre o software e o usuário,<br> 
                     semelhante à harmonia que o ser humano encontra na natureza. <br>
                     Nossa missão é proporcionar uma experiência fluida e intuitiva.
                 </p>
-                <!-- <button class="sobrenos" id="scrollSobreNos">Sobre nós</button> -->
     
-                <div class="container-servicos">
-                    <div class="info-home">
+                <div class="container-servicos row">
+                    <div class="col-4 col-lg-2">
                         <p class="informacoes">250 
                             <span class="informacoes-mais">+</span><br> <p class="sub-info">Cliente <br> Satisfeito 
                         </p>
                     </div>
-                    <div class="info-home">
-                        <p class="informacoes">400 
+                    <div class="col-4 col-lg-2">
+                        <p class="informacoes ">400 
                             <span class="informacoes-mais">+</span> <br> <p class="sub-info">Projetos <br> incriveis
                         </p>
                     </div>
-                    <div class="info-home">
+                    <div class="col-4 col-lg-2">
                         <p class="informacoes">15 
                             <span class="informacoes-mais">+</span> <br> <p class="sub-info">Premiações
                         </p>
                     </div>
                 </div>
-            </header> 
 
 
-
+            </header>
             <!-- <div class="header-content">
                 <h1>Bem-vindo ao Nosso Site</h1>
                 <p>Explore nossos serviços e conheça nossa equipe</p>
@@ -93,22 +108,22 @@
         <!-- sessão sobre nós -->
         <section class="container mt-5" id="sobrenos">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 col-sm-12">
                     <div class="linha-roxa mt-5"></div>
                     <h1 class="titulo-SobreNos mt-5">Sobre nós</h1>
                 </div>
 
-                <div class="col-6 col-xs-12">
+                <div class="col-12 col-sm-12 col-lg-6">
                     <p class="his-sobrenos">Na Coding Life, estamos dedicados a fornecer soluções de primeira linha que atendam às necessidades específicas de cada cliente. 
                         Buscamos ser uma empresa de software inovadora, destacando-nos pela nossa capacidade de criar uma conexão profunda entre o software e os usuários. Desde nossa fundação, nosso objetivo é proporcionar uma experiência intuitiva e harmoniosa, semelhante à relação do ser humano com a natureza. <span id="ellipsis">...</span>
                         <span class="extra-text">A história da empresa é um testemunho de como a tecnologia pode ser desenvolvida com propósito, 
                             criando experiências que não apenas atendem as necessidades dos usuarios, mas tambem enriquecem suas vidas.</span>
                     </p>
 
-                    <button id="verMaisBtn" class="btn-VerMais mt-2">Ver mais</button>
+                    <button id="verMaisBtn" class="btn-VerMais mt-2 mb-2">Ver mais</button>
                 </div>
 
-                <div class="col-6 col-xs-12">
+                <div class="col-12 col-sm-12 col-lg-6">
                     <img class="img-fluid" src="img/office.jpg" alt="Office">
                 </div>
             </div>   
@@ -117,12 +132,12 @@
         <!-- sessão serviços -->
         <section class="container mt-5" id="servicos">
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <div class="linha-roxa mt-5"></div>
                     <h1 class="titulo-SobreNos mt-5">Nossos<br/>Serviços</h1>
                 </div>
 
-                <div class="col-6 d-flex align-items-end">
+                <div class="col-12 col-lg-6 d-flex align-items-end">
                     <p class="his-sobrenos">Bem-vindo à nossa plataforma de serviços excepcionais! 
                         Na Codding Life, estamos dedicados a fornecer soluções de primeira linha 
                         que atendam às necessidades específicas de cada cliente.
@@ -130,14 +145,14 @@
                 </div>
             </div>
             <div class="row mt-5">
-                <div class="col-4">
+                <div class="col-12 col-lg-4">
                     <img class="img-fluid imgRedi" src="img/design.png" alt="Desing">
                     <h1 class="informacoes1">Design</h1>
                     <p class="his-sobrenos">Montamos toda a identidade visual da sua empresa! Vemos os objetivos e fazemos totalmente de acordo com o que nossos clientes desejam e esperam.
                     </p>
                 </div>
 
-                <div class="col-4">
+                <div class="col-12 col-lg-4">
                     <img class="img-fluid imgRedi" src="img/desenvolvimento.png" alt="Desenvolvimento">
                     <h1 class="informacoes1">Desenvolvimento</h1>
                     <p class="his-sobrenos">Desenvolvemos todos os sistemas e programas! Desde a parte visual, passando pelo front-end, back-end e até os dados, oferecendo soluções completas.
@@ -145,7 +160,7 @@
     
                 </div>
 
-                <div class="col-4">
+                <div class="col-12 col-lg-4">
                     <img class="img-fluid imgRedi" src="img/analise.png" alt="Analise" >
                     <h1 class="informacoes1">Análise</h1>
                     <p class="his-sobrenos">Cuidamos de todo estudo para execução do projeto! Todo o levantamento necessário e execução teórica do projeto podemos fazer e entregar.
@@ -165,25 +180,25 @@
 
             <!-- fotos -->
             <div class="row mt-3">
-                <div class="col-3 py-1 d-flex flex-column justify-content-center">
+                <div class="col-12 col-lg-3 py-1 d-flex flex-column justify-content-center">
                     <img class="imgEquipe" src="img/Davii.png" alt="Davi">
                     <h1 class="txtnome">Davi dos Santos Nascimento</h1>
                     <p class="cargos">Desenvolvedor Full Stack e Designer</p>
                 </div>
 
-                <div class="col-3 py-1 d-flex flex-column justify-content-center">
+                <div class="col-12 col-lg-3 py-1 d-flex flex-column justify-content-center">
                     <img class="imgEquipe" src="img/Emily.png" alt="Emily">
                     <h1 class="txtnome">Emily Tavares <br> Ferreira</h1>
                     <p class="cargos">Designer e Redes Sociais</p>
                 </div>
 
-                <div class="col-3 py-1 d-flex flex-column justify-content-center">
+                <div class="col-12 col-lg-3 py-1 d-flex flex-column justify-content-center">
                     <img class="imgEquipe" src="img/Fernando.png" alt="Fernando">
                     <h1 class="txtnome pd-fer">Fernando Crociatti de Toledo</h1>
                     <p class="cargos">Desenvolvedor Back-End</p>
                 </div>
 
-                <div class="col-3 py-1 d-flex flex-column justify-content-center">
+                <div class="col-12 col-lg-3 py-1 d-flex flex-column justify-content-center">
                     <img class="imgEquipe" src="img/Gabriel.png" alt="Gabriel">
                     <h1 class="txtnome">Gabriel Galhardo <br>da Silva</h1>
                     <p class="cargos">Designer e Redes Sociais</p>
@@ -191,18 +206,18 @@
             </div>
 
             <div class="row mt-4 pd">
-                <div class="col-4 py-3 d-flex flex-column justify-content-center">
+                <div class="col-12 col-lg-4 py-3 d-flex flex-column justify-content-center">
                     <img class="imgEquipe" src="img/Luis.png" alt="Luis">
                     <h1 class="txtnome">Luis Henrique Bispo <br>de Jesus</h1>
                     <p class="cargos">Desenvolvedor Front-End</p>
                 </div>
 
-                <div class="col-4 py-3 d-flex flex-column justify-content-center">
+                <div class="col-12 col-lg-4 py-3 d-flex flex-column justify-content-center">
                     <img class="imgEquipe" src="img/Nicolas.png" alt="Nicolas">
                     <h1 class="txtnome">Nicolas Nascimento <br>de Jesus</h1>
                     <p class="cargos"> Desenvolvedor Full Stack</p>
                 </div>
-                <div class="col-4 py-3 d-flex flex-column justify-content-center">
+                <div class="col-12 col-lg-4 py-3 d-flex flex-column justify-content-center">
                     <img class="imgEquipe" src="img/Suzana.png" alt="Suzana">
                     <h1 class="txtnome">Suzana Lorena Pereira<br>da Silva</h1>
                     <p class="cargos">Analista de Sistemas</p>
@@ -211,7 +226,6 @@
         </section>
     </div>
 
-    
    
     <button id="backToTopBtn" title="Ir para o topo">↑</button>
 
@@ -220,11 +234,11 @@
         <img class="footer-fundo" id="contatos" src="img/footer1.png" alt="Footer">
         <div class="footer-content d-flex align-items-center">
             <div class="row ">
-                <div class="col-9 py-4">
+                <div class="col-12 col-lg-9 py-4">
                     <p class="text-footer">Convidamos você a nos seguir nas redes sociais para ficar por dentro das novidades, dicas e eventos. <br> Junte-se à nossa comunidade e acompanhe nosso trabalho de perto!</p>
                 </div>
 
-                <div class="btn-icon-footer col-3 py-4">
+                <div class="btn-icon-footer col-12 col-lg-3 py-4">
 
                     <a href="https://www.x.com" target="_blank">
                         <img src="img/x-logo.png" alt="X">

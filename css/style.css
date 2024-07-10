@@ -246,3 +246,47 @@
 .pd-fer{
     padding: 18px 10px 0;
 }
+
+
+@media (max-width: 768px) {
+    .imgRedi {
+        height: 210px;
+    }
+    .btn-VerMais{
+        width: 70%;
+        height:45px;
+        margin-left: 35px;
+    }
+    .titulo-home{
+        font-size: 35px;
+        line-height: 60px;
+    }
+    .sub-home{
+        font-size: 18px;
+        line-height: 36px;
+    }
+
+    .logo{
+        width: 70px !important;
+    }
+
+    .informacoes{
+        padding-right: 18px;
+        font-size: 18px
+    }
+    
+    .informacoes-mais{
+        font-size: 18px;
+    }
+
+    .sub-info{
+        font-size: 16px
+    }
+}
+
+/* Estilo para dispositivos móveis (largura máxima de 480px) */
+@media (max-width: 480px) {
+    .imgRedi {
+        height: 210px;
+    }
+}
