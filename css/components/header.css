@@ -165,9 +165,12 @@
     right: 45px;
     font-size: 3em;
     cursor: pointer;
-    color: blue;
-    background-color: bisque;
+    color: var(--fundo-branco);
 }
+
+.mobile-menu-overlay .closebtn:hover{
+    color: var(--lilas);
+} 
 
 .mobile-menu {
     position: absolute;
@@ -182,14 +185,16 @@
 }
 
 .mobile-menu li a {
-    color: white;
-    text-decoration: none;
-    font-size: 2em;
+    font-size: 24px;
     transition: color 0.3s;
+    color: var(--fundo-branco);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 .mobile-menu li a:hover {
-    color: #ff5733;
+    color: var(--lilas);
 }
 
 /* Media query para dispositivos móveis */
