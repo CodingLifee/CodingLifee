@@ -104,7 +104,7 @@
 /* IMAGEM DENTRO DO HEADER DA HOME */
 .logo{
     object-fit: contain;
-    width: 200px;
+    /* width: 200px; */
     height: 70px;
 }
 
