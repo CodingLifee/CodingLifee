@@ -18,13 +18,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('scrollSobreNos').addEventListener('click', function() {
-        document.getElementById('sobrenos').scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+// document.addEventListener('DOMContentLoaded', function() {
+//     document.getElementById('scrollSobreNos').addEventListener('click', function() {
+//         document.getElementById('sobrenos').scrollIntoView({
+//             behavior: 'smooth'
+//         });
+//     });
+// });
 
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('verMaisBtn').addEventListener('click', function() {
@@ -60,4 +60,26 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    var menuIcon = document.getElementById('menuIcon');
+    var closeBtn = document.getElementById('closeBtn');
+    var mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+    var mobileMenuLinks = document.querySelectorAll('.mobile-menu li a');
 
+    // Abrir o menu mobile
+    menuIcon.addEventListener('click', function() {
+        mobileMenuOverlay.style.width = '100%';
+    });
+
+    // Fechar o menu mobile
+    closeBtn.addEventListener('click', function() {
+        mobileMenuOverlay.style.width = '0%';
+    });
+
+    // Fechar o menu mobile ao clicar em um link
+    mobileMenuLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            mobileMenuOverlay.style.width = '0%';
+        });
+    });
+});
